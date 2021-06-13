@@ -1,8 +1,12 @@
 # Site settings
-baseURL = "http://example.org/"
+baseURL = "http://lingyihugowebsite.s3-website.us-east-2.amazonaws.com/"
 languageCode = "en-us"
-title = "Forty"
+title = "Poivre"
 theme = "forty"
+
+[[deployment.targets]]
+name = "awsbucket"
+URL = "s3://lingyihugowebsite/?region=us-east-2"
 
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
@@ -19,7 +23,7 @@ disqusShortname = ""
   # CSS class.
 
   # Provide your metadata here.
-  name = "Your name"
+  name = "Lingyi Tan"
   description = "Your description"
 
   # Link custom assets relative to /static
