@@ -2,12 +2,8 @@ version: 0.1
 
 environment_variables:
   plaintext:
-<<<<<<< HEAD
     HUGO_VERSION: "0.83.1"
-=======
-    HUGO_VERSION: "0.81.3"
->>>>>>> 3e72b4476e86afde5800b2e37596be9027bf521d
-    
+
 phases:
   install:
     commands:                                                                 
@@ -24,9 +20,4 @@ phases:
   post_build:
     commands:
       - aws s3 sync --delete public s3://lingyihugowebsite/ --region us-east-2
-<<<<<<< HEAD
       - echo Build completed on `date`
-      
-=======
-      - echo Build completed on `date`
->>>>>>> 3e72b4476e86afde5800b2e37596be9027bf521d
